@@ -1,0 +1,14 @@
+<html>
+<body>
+<script>
+   function removeTags(str) {
+      if ((str===null) || (str===''))
+      return false;
+      else
+      str = str.toString();
+      return str.replace( /(<([^>]+)>)/ig, '');
+   }
+   document.write(removeTags('<html> <body> SkillSanta<body> Assignments'));;
+</script>
+</body>
+</html>
